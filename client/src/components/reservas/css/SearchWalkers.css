@@ -1,0 +1,95 @@
+.container-fluid {
+    padding: 0;
+}
+
+.large {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.profiles-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+}
+
+.profile-img-container {
+    flex: 0 0 80px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.profile-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.premium-badge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0);
+    padding: 2px 5px;
+    border-radius: 0 0 5px 0;
+}
+
+.premium-badge span {
+    margin-left: 5px;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.profile-title {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.profile-description {
+    color: #555;
+}
+
+.profile-location {
+    color: #999;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.map {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}

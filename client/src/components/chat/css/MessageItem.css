@@ -1,0 +1,25 @@
+.message-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.message-sender {
+    font-weight: bold;
+}
+
+.message-timestamp {
+    font-style: italic;
+}
+
+.message-content {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #333;
+}

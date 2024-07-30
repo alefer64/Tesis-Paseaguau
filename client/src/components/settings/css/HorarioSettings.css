@@ -1,0 +1,16 @@
+.horario-settings-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.horario-table .ant-table-thead > tr > th {
+    text-align: center;
+}
+
+.horario-table .ant-table-tbody > tr > td {
+    text-align: center;
+}

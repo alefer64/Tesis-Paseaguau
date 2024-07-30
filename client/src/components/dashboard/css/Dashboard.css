@@ -1,0 +1,39 @@
+.dashboard-container {
+    padding: 2rem;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+.dashboard-title {
+    color: #1890ff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dashboard-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: block;
+    color: #555;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-card {
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard-icon {
+    font-size: 48px;
+    margin-bottom: 1rem;
+    color: #1890ff;
+}

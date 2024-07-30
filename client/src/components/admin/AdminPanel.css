@@ -1,0 +1,32 @@
+.admin-panel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.solicitud-container {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.solicitud-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.solicitud-detalle {
+    padding: 10px;
+}
+
+.foto-documento {
+    margin-top: 10px;
+}
+
+.foto-documento img {
+    max-width: 100%;
+}

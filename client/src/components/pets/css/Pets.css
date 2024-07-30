@@ -1,0 +1,15 @@
+.mascota-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.mascota {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+.formulario {
+    margin-top: 20px;
+}
