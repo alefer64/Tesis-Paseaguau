@@ -55,8 +55,13 @@ const Settings = ({ getCurrentProfile, deleteAccount, auth: { user } }) => {
           <>
             <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
               <Col className='test' xs={24} md={12} lg={8}>
-                <Card title='Últimos Mensajes'>
-                  <p>No hay mensajes</p>
+                <Card title='Sector de Información'>
+                  <Link to='FAQ'>
+                    <Button type='primary' block className='my-1'>FAQ</Button>
+                  </Link>
+                  <Link to='Contacto'>
+                    <Button type='primary' block className='my-1'>Contacto</Button>
+                  </Link>
                 </Card>
               </Col>
               <Col className='test' xs={24} md={12} lg={8}>

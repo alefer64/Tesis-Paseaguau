@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Row, Col, Button, Card } from 'antd';
+import { Row, Col, Card } from 'antd';
 import './css/Landing.css';
 
 const Landing = () => {

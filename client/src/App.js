@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
+import AppFooter from './components/layout/Footer';
 import Landing from './components/layout/Landing';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
@@ -40,6 +41,8 @@ import Chat from './components/chat/Chat';
 import SearchWalkers from './components/reservas/SearchWalkers';
 import HorarioSettings from './components/settings/HorarioSettings';
 import Premium from './components/settings/Premium';
+import FAQ from './components/settings/FAQ';
+import Contact from './components/settings/Contact';
 
 const App = () => {
   useEffect(() => {
@@ -55,38 +58,45 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
-        <Navbar />
-        <Alert />
-        <Routes>
-          <Route path='/' element={<Landing />} />
-          <Route path='register' element={<Register />} />
-          <Route path='login' element={<Login />} />
-          <Route path='recuperar' element={<ForgotPassword />} />
-          <Route path='reset-password/:token' element={<ResetPassword />} />
-          <Route path='dashboard' element={<PrivateRoute component={Dashboard} />} />
-          <Route path='settings' element={<PrivateRoute component={Settings} />} />
-          <Route path='settings/changepassword' element={<PrivateRoute component={ChangePassword} />} />
-          <Route path='settings/personal-details' element={<PrivateRoute component={PersonalDetailsForm} />} />
-          <Route path='settings/pricing' element={<PaseadorRoute component={Pricing} />} />
-          <Route path='settings/availability' element={<PaseadorRoute component={HorarioSettings} />} />
-          <Route path='settings/profile' element={<PrivateRoute component={WalkerProfileForm} />} />
-          <Route path='settings/updateaddress' element={<PrivateRoute component={UpdateAddress} />} />
-          <Route path='settings/gallery' element={<PrivateRoute component={Gallery} />} />
-          <Route path='settings/premium' element={<PrivateRoute component={Premium} />} />
-          <Route path='settings/historialpagos' element={<PrivateRoute component={HistorialPagos} />} />
-          <Route path='/chats' element={<PrivateRoute component={Chat} />} />
-          <Route path='/chats/:chatId' element={<PrivateRoute component={Chat} />} />
-          <Route path='pets' element={<PrivateRoute component={Pets} />} />
-          <Route path='solicitudpaseador' element={<PrivateRoute component={PaseadorForm} />} />
-          <Route path='perfil/:id' element={<PrivateRoute component={Perfil} />} />
-          <Route path='admin' element={<AdminRoute component={AdminPanel} />} />
-          <Route path='reservapaseo' element={<PrivateRoute component={SearchWalkers} />} />
-          <Route path='miperfil' element={<PaseadorRoute component={MiPerfil} />} />
-          <Route path='settings/success/:transactionId' element={<PrivateRoute component={PaymentSuccess} />} />
-          <Route path='settings/failure/:transactionId' element={<PrivateRoute component={PaymentFailure} />} />
-          <Route path='settings/pending/:transactionId' element={<PrivateRoute component={paymentPending} />} />
-          <Route path='/*' element={<NotFound />} />
-        </Routes>
+        <div className='App'>
+          <Navbar />
+          <Alert />
+          <div className='content'>
+            <Routes>
+              <Route path='/' element={<Landing />} />
+              <Route path='register' element={<Register />} />
+              <Route path='login' element={<Login />} />
+              <Route path='recuperar' element={<ForgotPassword />} />
+              <Route path='reset-password/:token' element={<ResetPassword />} />
+              <Route path='dashboard' element={<PrivateRoute component={Dashboard} />} />
+              <Route path='settings' element={<PrivateRoute component={Settings} />} />
+              <Route path='settings/changepassword' element={<PrivateRoute component={ChangePassword} />} />
+              <Route path='settings/personal-details' element={<PrivateRoute component={PersonalDetailsForm} />} />
+              <Route path='settings/pricing' element={<PaseadorRoute component={Pricing} />} />
+              <Route path='settings/availability' element={<PaseadorRoute component={HorarioSettings} />} />
+              <Route path='settings/profile' element={<PrivateRoute component={WalkerProfileForm} />} />
+              <Route path='settings/updateaddress' element={<PrivateRoute component={UpdateAddress} />} />
+              <Route path='settings/gallery' element={<PrivateRoute component={Gallery} />} />
+              <Route path='settings/premium' element={<PrivateRoute component={Premium} />} />
+              <Route path='settings/historialpagos' element={<PrivateRoute component={HistorialPagos} />} />
+              <Route path='settings/faq' element={<PrivateRoute component={FAQ} />} />
+              <Route path='settings/contacto' element={<PrivateRoute component={Contact} />} />
+              <Route path='/chats' element={<PrivateRoute component={Chat} />} />
+              <Route path='/chats/:chatId' element={<PrivateRoute component={Chat} />} />
+              <Route path='pets' element={<PrivateRoute component={Pets} />} />
+              <Route path='solicitudpaseador' element={<PrivateRoute component={PaseadorForm} />} />
+              <Route path='perfil/:id' element={<PrivateRoute component={Perfil} />} />
+              <Route path='admin' element={<AdminRoute component={AdminPanel} />} />
+              <Route path='reservapaseo' element={<PrivateRoute component={SearchWalkers} />} />
+              <Route path='miperfil' element={<PaseadorRoute component={MiPerfil} />} />
+              <Route path='settings/success/:transactionId' element={<PrivateRoute component={PaymentSuccess} />} />
+              <Route path='settings/failure/:transactionId' element={<PrivateRoute component={PaymentFailure} />} />
+              <Route path='settings/pending/:transactionId' element={<PrivateRoute component={paymentPending} />} />
+              <Route path='/*' element={<NotFound />} />
+            </Routes>
+          </div>
+          <AppFooter />
+        </div>
       </Router>
     </Provider>
   );

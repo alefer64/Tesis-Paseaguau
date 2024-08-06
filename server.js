@@ -23,7 +23,6 @@ app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.send('API CORRIENDO'));
 
-// Define Routes
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
@@ -68,5 +67,4 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-// Usa server.listen en lugar de app.listen
 server.listen(PORT, () => console.log(`Server abierto en el puerto ${PORT}`));

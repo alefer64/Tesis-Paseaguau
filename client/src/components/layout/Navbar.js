@@ -96,17 +96,17 @@ const Navbar = ({ auth: { isAuthenticated, user }, logout }) => {
         <Link to='/reservapaseo' onClick={handleLinkClick}>Reservar Paseo</Link></Menu.Item>
       <Menu.Item key='dashboard'>
         <Link to='/dashboard' onClick={handleLinkClick}>
-          <i className='fas fa-user' /> <span className='hide-sm'>Dashboard</span>
+          Dashboard
         </Link>
       </Menu.Item>
       <Menu.Item key='settings'>
         <Link to='/settings' onClick={handleLinkClick}>
-          <i className='fas fa-cog' /> <span className='hide-sm'>Settings</span>
+          Settings
         </Link>
       </Menu.Item>
       <Menu.Item key='logout'>
         <a onClick={() => { logout(); handleLinkClick(); }} href='#!'>
-          <i className='fas fa-sign-out-alt' /> <span className='hide-sm'>Logout</span>
+          Cerrar Sesión
         </a>
       </Menu.Item>
     </Menu>

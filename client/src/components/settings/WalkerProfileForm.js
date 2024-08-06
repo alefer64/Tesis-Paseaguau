@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import api from '../../utils/api';
 import { useNavigate, Link } from 'react-router-dom';
 import { message } from 'antd';
@@ -14,7 +13,7 @@ const WalkerProfileForm = () => {
     pequeno: false,
     mediano: false,
     grande: false,
-    gigante: false,
+    gigante: false
   });
 
   const navigate = useNavigate();
@@ -41,13 +40,13 @@ const WalkerProfileForm = () => {
     e.preventDefault();
     const data = {
       titulo,
-      descripcion,
+      descripcion
     };
     try {
-      const res = await api.put('/profile/update', data, {
+      await api.put('/profile/update', data, {
         headers: {
-          'Content-Type': 'application/json',
-        },
+          'Content-Type': 'application/json'
+        }
       });
       message.success('Perfil actualizado exitosamente');
       navigate('/settings');
@@ -60,7 +59,7 @@ const WalkerProfileForm = () => {
   return (
     <section className='container'>
       <h1 className='large text-primary'>Tu Perfil</h1>
-      <form onSubmit={handleSubmit} className="form">
+      <form onSubmit={handleSubmit} className='form'>
         <div className='form-group'>
           <label htmlFor='titulo'>Título breve</label>
           <input
@@ -148,8 +147,6 @@ const WalkerProfileForm = () => {
     </section>
   );
 };
-
-WalkerProfileForm.propTypes = {};
 
 const mapStateToProps = (state) => ({});
 
