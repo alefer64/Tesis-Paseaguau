@@ -9,6 +9,7 @@ const Profile = require('../../models/Profile');
 // @route   POST api/chats
 // @desc    Create a new chat
 // @access  Private
+// test
 router.post('/', auth, async (req, res) => {
   const { profileId } = req.body;
   const userId = req.user.id;
