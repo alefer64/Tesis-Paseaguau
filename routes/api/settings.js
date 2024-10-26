@@ -42,6 +42,7 @@ router.delete('/upload', auth, async (req, res) => {
   try {
     const url = req.body.url.replace(/\\/g, '\\');
     const profile = await Profile.findOne({ user: req.user.id });
+    const user = await User.findById(req.user.id);
 
     if (!profile) {
       return res.status(400).json({ msg: 'Perfil no encontrado' });
@@ -161,8 +162,6 @@ router.put('/direccion', auth, async (req, res) => {
       return res.status(404).json({ msg: 'Usuario no encontrado' });
     }
 
-    console.log('4');
-
     user.address = newAddress;
 
     await user.save();
@@ -170,7 +169,7 @@ router.put('/direccion', auth, async (req, res) => {
     if (user.esPaseador) {
       const profile = await Profile.findOne({ user: req.user.id });
       if (profile) {
-        profile.ubicacion = newAddress;
+        profile.direccion = newAddress;
         await profile.save();
       }
     }
