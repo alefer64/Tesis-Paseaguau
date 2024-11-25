@@ -1,0 +1,67 @@
+.premium-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.premium-container .ant-card {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+}
+
+.premium-title {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.premium-thanks {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.premium-price {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.premium-benefits-title {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.premium-benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.premium-benefits li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .premium-container {
+        padding: 1rem;
+    }
+
+    .premium-title {
+        font-size: 2rem;
+    }
+
+    .premium-thanks,
+    .premium-price,
+    .premium-benefits-title {
+        font-size: 1.4rem;
+    }
+
+    .premium-benefits li {
+        font-size: 1rem;
+    }
+}

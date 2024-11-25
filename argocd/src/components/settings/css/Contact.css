@@ -1,0 +1,12 @@
+.contact-container {
+    padding: 2rem;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}

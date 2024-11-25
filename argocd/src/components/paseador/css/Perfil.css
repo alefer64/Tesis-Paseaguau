@@ -1,0 +1,125 @@
+.table-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-cell {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-cell.available {
+    background-color: #b2f7b2;
+}
+
+.table-cell.not-available {
+    background-color: #f0f0f0;
+}
+
+.profile-header img.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.profile-section {
+    margin-top: 20px;
+}
+
+.profile-section-footer {
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-info {
+    margin-left: 20px;
+}
+
+.profile-info h1,
+.profile-info p {
+    margin: 0;
+}
+
+.price-card {
+    margin-top: 40px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.price {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.profile-content {
+    margin-top: 20px;
+}
+
+.profile-section {
+    margin-top: 50px;
+}
+
+.profile-section table {
+    width: 100%;
+}
+
+.profile-section-footer {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.gallery-container {
+    margin-top: 30px;
+}
+
+.gallery-card {
+    margin-bottom: 20px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
