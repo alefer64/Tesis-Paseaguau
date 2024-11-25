@@ -4,7 +4,8 @@ metadata:
   name: paseaguau-ui
 spec:
   ports:
-  - port: 3000
+  - port: 80
     targetPort: 3000
+    nodePort: 30000
   selector:
     app: paseaguau-ui
