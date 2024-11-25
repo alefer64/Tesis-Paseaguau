@@ -52,7 +52,6 @@ const Dashboard = () => {
         </Col>
       </Row>
     </div>
-
   );
 };
 
