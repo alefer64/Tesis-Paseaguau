@@ -17,4 +17,4 @@ spec:
       - image: afernandez64/paseaguau:v1
         name: paseaguau
         ports:
-        - containerPort: 80
+        - containerPort: 3000
