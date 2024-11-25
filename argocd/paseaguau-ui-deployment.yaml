@@ -14,7 +14,7 @@ spec:
         app: paseaguau-ui
     spec:
       containers:
-      - image: afernandez64/paseaguau:v1
+      - image: afernandez64/paseaguau:v2
         name: paseaguau
         ports:
         - containerPort: 3000
