@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: paseaguau-ui
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: paseaguau-ui
+  template:
+    metadata:
+      labels:
+        app: paseaguau-ui
+    spec:
+      containers:
+      - image: afernandez64/paseaguau:54
+        name: paseaguau
+        ports:
+        - containerPort: 3000
