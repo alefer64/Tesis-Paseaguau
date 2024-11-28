@@ -19,7 +19,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 script {
-                    sh "docker build . paseaguau:${BUILD_NUMBER}"
+                    sh "docker build -t paseaguau:${BUILD_NUMBER} ."
                 }
             }
         }
