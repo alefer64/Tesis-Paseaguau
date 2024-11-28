@@ -12,7 +12,7 @@ const Landing = () => {
           </Col>
           <Col xs={24} md={12}>
             <div className="info-text">
-              <h2>Acerca de Pasea</h2>
+              <h2>Acerca de Paseaguau</h2>
               <p>
                 PaseaGuau es la aplicación perfecta para conectar a dueños de mascotas con paseadores de confianza.
                 Ofrecemos una plataforma segura y fácil de usar para que puedas asegurarte de que tu mascota está en
