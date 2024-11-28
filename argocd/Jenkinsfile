@@ -23,18 +23,16 @@ pipeline {
                 }
             }
         }
+
+        stage('Push Image') {
+            steps {
+              script {
+                  sh "docker push paseaguau:${BUILD_NUMBER}"
+              }
+            }
+        }
+      
         }
         
-    }
-
-    post {
-        success {
-        }
-        failure {
-          
-        }
-        always {
-
-        }
     }
 } 
